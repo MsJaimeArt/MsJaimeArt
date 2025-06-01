@@ -1,0 +1,229 @@
+body {
+  background-color: #c9bb48;
+  margin: 80px;
+  font-family: 'Montserrat';
+  color: #000000;
+  font-size: 22pt;
+}
+
+h1{
+   font-size: 24pt;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 300px 400px;
+  justify-content: center;
+  align-content: center;
+  column-gap: 10px; /*are either of these working???*/
+  row-gap: 10px; /*are either of these working???*/
+  
+}
+
+/* Medium screens (tablets): 2 columns */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens (phones): 1 column */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.flashcard {
+  perspective: 1000px;
+  width: 100%;             
+  height: 300px;           
+  animation: fadeUp 0.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+  touch-action: manipulation;
+}
+
+
+/* Flip on hover for desktop folks*/
+.flashcard:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Flip on tap for mobile folks*/
+.flashcard.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 20px;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 30s linear infinite;
+  font-family: 'Montserrat';
+  font-size: 1.8rem;
+  color: #000000;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.card-front {
+  background-color: #FAF0E6;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-front img {
+  max-height: 250px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.card-number{
+  font-size:large;
+  font-weight: bolder;
+}
+
+.card-title {
+font-size:large;
+font-weight: bolder;
+justify-content: right;
+font-size: 9pt;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 28pt;
+  padding: 5px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back-raspberry,
+.card-back-ochre,
+.card-back-emerald,
+.card-back-kahlo,
+.card-back-umber {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card-back-umber {
+  background-color: #052a2a; /*make different "card-backs for different colors for each page"*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  color: #ffffff;
+  font-size: 20pt;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-back-emerald {
+  background-color: #138d8d; /*make different "card-backs for different colors for each page"*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  color: #ffffff;
+  font-size: 20pt;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-back-kahlo {
+  background-color: #000f89; /*make different "card-backs for different colors for each page"*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  color: #ffffff;
+  font-size: 20pt;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-back-ochre {
+  background-color: #c18f32; /*make different "card-backs for different colors for each page"*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  color: #ffffff;
+  font-size: 20pt;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-back-raspberry {
+  background-color: #841b2d; /*make different "card-backs for different colors for each page"*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  color: #ffffff;
+  font-size: 20pt;
+  padding: 20px;
+  text-align: center;
+}
+
+.dropdown-nav {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.dropdown-nav select {
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 2px solid #000000;
+}
+

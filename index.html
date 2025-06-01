@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashcard Grid!!!</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--
+*****colors used*****
+ochre: #c9bb3f
+blue: #6f8db6
+rapberry: #682936
+umber: 423217
+teal: #346658
+antique white: dbd5c6
+-->
+
+<body>
+  <div class="marquee">
+  <div class="marquee-content">
+    Ms. Jaime's Digital Flash Cards! You've got this! Don't give up! I believe in you! Keep your funny up, not your money up!
+  </div>
+</div>
+
+  <nav class="dropdown-nav">
+  <label for="unit-select">Go to Unit:</label>
+  <select id="unit-select" onchange="goToUnit(this)">
+    <option value="index.html">Unit 1</option>
+    <option value="unit2.html">Unit 2</option>
+    <option value="unit3.html">Unit 3</option>
+    <option value="unit4.html">Unit 4</option>
+    <option value="unit5.html">Unit 5</option>
+    <option value="unit6.html">Unit 6</option>
+    <option value="unit7.html">Unit 7</option>
+    <option value="unit8.html">Unit 8</option>
+    <option value="unit9.html">Unit 9</option>
+    <option value="unit10.html">Unit 10</option>
+    <option value="arch.html">ARCHITECTURE</option>
+  </select>
+</nav>
+
+  <h1>PREHISTORIC ART</h1>
+  <div class="grid-container">
+    <!-- Apollo 11 stones ---------------------------------->
+    <div class="flashcard" style="animation-delay: .5s;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="1. Apollo 11 Stones.jpeg" alt="Artwork 1">
+          <div class="card-text">
+            <span class="card-number">01</span>
+            <span class="card-title">Apollo 11 stones.</span>
+          </div>
+        </div>
+        <div class="card-back-raspberry">
+          <p>Namibia. c. 25,500-25,300 BCE. Charcoal on stone.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Running horned woman ------------------------------>
+    <div class="flashcard" style="animation-delay: 1s;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="4. Running Horned Woman enhanced.jpeg" alt="Artwork 2">
+          <div class="card-text">
+            <span class="card-number">04</span>
+            <span class="card-title">Running horned woman.</span>
+          </div>
+        </div>
+        <div class="card-back-ochre">
+          <p>Tassili n'Ajjer, Algeria. 6000-4000BCE. Pigment on rock.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Camelid sacrum --------------------------------->
+    <div class="flashcard" style="animation-delay: 1.5s;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="3. Camelid sacrum in the shape of a canine.jpeg" alt="Artwork 3">
+          <div class="card-text">
+            <span class="card-number">03</span>
+            <span class="card-title">Camelid sacrum in the shape of a canine.</span>
+          </div>
+        </div>
+        <div class="card-back-emerald">
+          <p>Tequixquiac, central Mexico. 14,000-7,000 BCE. Bone.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Great Hall of the Bulls --------------------------------->
+    <div class="flashcard" style="animation-delay: 2s;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="2. Great Hall of the Bulls detail a.jpeg" alt="Artwork 4">
+          <div class="card-text">
+            <span class="card-number">02</span>
+            <span class="card-title">Great Hall of the Bulls.</span>
+          </div>
+        </div>
+        <div class="card-back-kahlo">
+          <p>Lascaux, France. Paleolithic Europe. 15,000-13,000 BCE. Rock painting.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beaker with ibex motifs --------------------------------->
+    <div class="flashcard" style="animation-delay: 2.5s;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="5. Beaker with ibex motifs.jpg" alt="Artwork 5">
+          <div class="card-text">
+            <span class="card-number">05</span>
+            <span class="card-title">Beaker with ibex motifs.</span>
+          </div>
+        </div>
+        <div class="card-back-umber">
+          <p>Susa, Iran. 4200-3500 BCE. Painted terra cotta.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stonehenge --------------------------------->
+    <div class="flashcard" style="animation-delay: 3s;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="8. Stonehenge.jpeg" alt="Artwork 6">
+          <div class="card-text">
+            <span class="card-number">08</span>
+            <span class="card-title">Stonehenge.</span>
+          </div>
+        </div>
+        <div class="card-back-raspberry">
+          <p>Wiltshire, UK. Neolithic Europe. c. 2500-1600 BCE. Sandstone.</p>
+        </div>
+      </div>    <!-- time delays: 0.2s, 0.4s, 0.6s, 0.8s... -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <h1>AFRICAN ART</h1>
+  <!--add <div class="grid-container"> -->
+  <div class="grid-container">
+    <!-- Apollo 11 stones ---------------------------------->
+    <div class="flashcard" style="animation-delay: .5s;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="1. Apollo 11 Stones.jpeg" alt="Artwork 1">
+          <div class="card-text">
+            <span class="card-number">01</span>
+            <span class="card-title">Apollo 11 stones.</span>
+          </div>
+        </div>
+        <div class="card-back-raspberry">
+          <p>Namibia. c. 25,500-25,300 BCE. Charcoal on stone.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Running horned woman ------------------------------>
+    <div class="flashcard" style="animation-delay: 1s;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="4. Running Horned Woman enhanced.jpeg" alt="Artwork 2">
+          <div class="card-text">
+            <span class="card-number">04</span>
+            <span class="card-title">Running horned woman.</span>
+          </div>
+        </div>
+        <div class="card-back-ochre">
+          <p>Tassili n'Ajjer, Algeria. 6000-4000BCE. Pigment on rock.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Camelid sacrum --------------------------------->
+    <div class="flashcard" style="animation-delay: 1.5s;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="3. Camelid sacrum in the shape of a canine.jpeg" alt="Artwork 3">
+          <div class="card-text">
+            <span class="card-number">03</span>
+            <span class="card-title">Camelid sacrum in the shape of a canine.</span>
+          </div>
+        </div>
+        <div class="card-back-emerald">
+          <p>Tequixquiac, central Mexico. 14,000-7,000 BCE. Bone.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Great Hall of the Bulls --------------------------------->
+    <div class="flashcard" style="animation-delay: 2s;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="2. Great Hall of the Bulls detail a.jpeg" alt="Artwork 4">
+          <div class="card-text">
+            <span class="card-number">02</span>
+            <span class="card-title">Great Hall of the Bulls.</span>
+          </div>
+        </div>
+        <div class="card-back-kahlo">
+          <p>Lascaux, France. Paleolithic Europe. 15,000-13,000 BCE. Rock painting.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beaker with ibex motifs --------------------------------->
+    <div class="flashcard" style="animation-delay: 2.5s;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="5. Beaker with ibex motifs.jpg" alt="Artwork 5">
+          <div class="card-text">
+            <span class="card-number">05</span>
+            <span class="card-title">Beaker with ibex motifs.</span>
+          </div>
+        </div>
+        <div class="card-back-umber">
+          <p>Susa, Iran. 4200-3500 BCE. Painted terra cotta.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stonehenge --------------------------------->
+    <div class="flashcard" style="animation-delay: 3s;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="8. Stonehenge.jpeg" alt="Artwork 6">
+          <div class="card-text">
+            <span class="card-number">08</span>
+            <span class="card-title">Stonehenge.</span>
+          </div>
+        </div>
+        <div class="card-back-raspberry">
+          <p>Wiltshire, UK. Neolithic Europe. c. 2500-1600 BCE. Sandstone.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h1>PACIFIC ART</h1>
+<!--add <div class="grid-container"> -->
+
+
+
+
+
+
+
+
+
+  <script>
+  //drop-down menu to the other units
+  function goToUnit(selectElement) {
+    const url = selectElement.value;
+    if (url) {
+      window.location.href = url;
+    }
+  }
+
+  // Enable flip on tap for touch devices
+  document.querySelectorAll('.flashcard').forEach(card => {
+    card.addEventListener('click', () => {
+      // Only trigger tap-based flip if there's no hover capability
+      if (window.matchMedia('(hover: none)').matches) {
+        card.classList.toggle('flipped');
+      }
+    });
+  });
+
+
+    /* flips the card when clicked...replaced this with hover action
+    document.querySelectorAll('.flashcard').forEach(card => {
+      card.addEventListener('click', () => {
+        card.querySelector('.card-inner').classList.toggle('is-flipped');
+      });
+    });*/
+  
+  </script>
+</body>
+</html>
+
