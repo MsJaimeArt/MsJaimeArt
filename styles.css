@@ -9,6 +9,7 @@ body {
 h1{
    font-size: 24pt;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: 350px 350px 350px;
