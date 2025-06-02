@@ -48,9 +48,6 @@ h1{
 /* Flip on hover for desktop folks*/
 .flashcard:hover .card-inner {
   transform: rotateY(180deg);
-  box-shadow: 0 0 5px #ffffff,
-  0 0 25px, 0 0 50px #ffffff,
-  0 0 100px, 0 0 200px #ffffff;
 }
 
 /* Flip on tap for mobile folks*/
