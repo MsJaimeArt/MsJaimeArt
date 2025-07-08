@@ -1,15 +1,28 @@
 body {
-  background-color: #c9bb48;
+  background-color: #fcfce9;
   margin: 80px;
   font-family: 'Montserrat';
   color: #000000;
   font-size: 22pt;
 }
 
+.square {
+  height: 100px;
+  width: 100px;
+  margin:auto;
+  background-color: #000000;
+}
+
+.rectangle {
+  height:100px;
+  width: 300px;
+  margin: auto;
+  background-color: #000000;
+}
+
 h1{
    font-size: 24pt;
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: 350px 350px 350px;
@@ -92,7 +105,7 @@ h1{
 
 
 .card-front {
-  background-color: #FAF0E6;
+  background-color: #dadaba;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -158,7 +171,7 @@ font-size: 9pt;
 }
 
 .card-back-umber {
-  background-color: #052a2a; /*make different "card-backs for different colors for each page"*/
+  background-color: #675442; /*make different "card-backs for different colors for each page"*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,7 +183,7 @@ font-size: 9pt;
 }
 
 .card-back-emerald {
-  background-color: #138d8d; /*make different "card-backs for different colors for each page"*/
+  background-color: #51a8a8; /*make different "card-backs for different colors for each page"*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,7 +195,7 @@ font-size: 9pt;
 }
 
 .card-back-kahlo {
-  background-color: #000f89; /*make different "card-backs for different colors for each page"*/
+  background-color: #5d68c0; /*make different "card-backs for different colors for each page"*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,7 +207,7 @@ font-size: 9pt;
 }
 
 .card-back-ochre {
-  background-color: #c18f32; /*make different "card-backs for different colors for each page"*/
+  background-color: #bd9b5d; /*make different "card-backs for different colors for each page"*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,7 +219,7 @@ font-size: 9pt;
 }
 
 .card-back-raspberry {
-  background-color: #841b2d; /*make different "card-backs for different colors for each page"*/
+  background-color: #cf6f7f; /*make different "card-backs for different colors for each page"*/
   display: flex;
   align-items: center;
   justify-content: center;
